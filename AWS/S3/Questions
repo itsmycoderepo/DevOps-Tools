@@ -1,4 +1,4 @@
-How do you prevent Terraform state deletion from S3?
+1. How do you prevent Terraform state deletion from S3?
 - Enable Bucket Versioning
 - Server-Side Encryption
 - Object Lock
@@ -6,4 +6,11 @@ How do you prevent Terraform state deletion from S3?
 - IAM with Lease privilages
 - CloudTrail Enabled
 - Enable mcross-region Replication
+
+2. What is Terraforms statepush
+Ans: terraform state push is a command used to manually upload a Terraform state file (terraform.tfstate) 
+to the configured backend (such as S3, Terraform Cloud, etc...).
+
+3. terraform graph is a command that generates a dependency graph of your Terraform configuration. It shows 
+how resources depend on each other and the order in which Terraform creates or destroys them.
 
