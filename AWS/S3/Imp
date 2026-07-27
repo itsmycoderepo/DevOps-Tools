@@ -16,3 +16,30 @@ To untaint a resource    --> terraform untaint <resource_type>.<resource_name>
 
 To list the resources managed by Terraform    --> terraform state list
 To get information about Particular resource  --> terraform state show <resorce-type>.<resource_name>
+
+Resource Dependency:
+=============================
+- Terraform automatically gathers, when one resource depend on anathor by studying the resource attribute
+used.
+
+- If you want to explicitly mention dependencies between resources that are not visible to terraform we 
+can use depends on argument.
+
+
+**Implicit dependency:** This refers to a relationship between resources that Terraform automatically understands
+based on the configuration. It means that Terraform can determine the order in which resources should be created
+or updated without explicit instructions from the user.
+
+**Explicit dependency**: This is a dependency relationship that you define explicitly in your Terraform configuration. 
+You specify that one resource depends on another, ensuring Terraform creates or updates resources in the correct order 
+based on your instructions.
+
+
+
+
+
+
+
+
+
+
