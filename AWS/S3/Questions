@@ -3,7 +3,7 @@
 - Server-Side Encryption
 - Object Lock
 - BucketPolicy (Deny)
-- IAM with Lease privilages
+- IAM with Least privilages
 - CloudTrail Enabled
 - Enable mcross-region Replication
 
