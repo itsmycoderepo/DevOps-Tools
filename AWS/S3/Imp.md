@@ -90,8 +90,34 @@ Terraform flow:
 
 Create EC2 --> SSH into EC2 -->Run apt update --> Install nginx --> Start nginx
 
-
 3. file Provisioner
+
+Copies files from the local machine to the remote machine.
+
+Example:
+
+resource "aws_instance" "web" {
+
+  connection {
+    type = "ssh"
+    user = "ubuntu"
+    private_key = file("mykey.pem")
+    host = self.public_ip
+  }
+
+  provisioner "file" {
+    source      = "index.html"
+    destination = "/tmp/index.html"
+  }
+}
+
+This copies:
+
+Local
+index.html
+      │
+      ▼
+EC2:/tmp/index.html
 
 
 
