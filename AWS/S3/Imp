@@ -1,0 +1,6 @@
+Terraform lifecycle arguments
+=============================
+1. create_before_destroy
+2. prevent_destroy
+3. ignore_changes
+4. replace_triggered_by
