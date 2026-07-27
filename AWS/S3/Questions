@@ -1,0 +1,9 @@
+How do you prevent Terraform state deletion from S3?
+- Enable Bucket Versioning
+- Server-Side Encryption
+- Object Lock
+- BucketPolicy (Deny)
+- IAM with Lease privilages
+- CloudTrail Enabled
+- Enable mcross-region Replication
+
