@@ -59,9 +59,17 @@ resource "aws_instance" "web" {
   }
 }
 -----------------------------
+-----------------------------
 2. remote-exec
 -----------------------------
 Runs commands inside the created resource using SSH (Linux) or WinRM (Windows).
+
+Types:
+
+inline - execute a list of commands
+script - used to copy a local script and then execute it and delete the copied script
+scripts - list of scripts will be copies and executed and delete the copied script 
+
 
 Example:
 
@@ -90,6 +98,7 @@ resource "aws_instance" "web" {
 Terraform flow:
 
 Create EC2 --> SSH into EC2 -->Run apt update --> Install nginx --> Start nginx
+-----------------------------
 -----------------------------
 3. file Provisioner
 -----------------------------
