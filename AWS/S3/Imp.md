@@ -91,7 +91,7 @@ Terraform flow:
 Create EC2 --> SSH into EC2 -->Run apt update --> Install nginx --> Start nginx
 
 3. file Provisioner
-
+-----------------------------
 Copies files from the local machine to the remote machine.
 
 Example:
