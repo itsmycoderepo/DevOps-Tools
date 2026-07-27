@@ -67,7 +67,9 @@ Runs commands inside the created resource using SSH (Linux) or WinRM (Windows).
 Types:
 
 inline - execute a list of commands
+
 script - used to copy a local script and then execute it and delete the copied script
+
 scripts - list of scripts will be copies and executed and delete the copied script 
 
 
