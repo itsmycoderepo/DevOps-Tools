@@ -44,7 +44,7 @@ the resource is created or destroyed.
 Types of Provisioners
 -----------------------------
 1. local-exec
-
+-----------------------------
 Runs a command on the machine where Terraform is executed.
 
 Example:
@@ -88,15 +88,9 @@ resource "aws_instance" "web" {
 
 Terraform flow:
 
-Create EC2
-        │
-        ▼
-SSH into EC2
-        │
-        ▼
-Run apt update
-Install nginx
-Start nginx
+Create EC2 --> SSH into EC2 -->Run apt update --> Install nginx --> Start nginx
+
+
 3. file Provisioner
 
 
