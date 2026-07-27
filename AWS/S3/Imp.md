@@ -11,13 +11,13 @@ Terraform Taints:
 These are used to manually mark, a terraform managed resource as tainted.
 Once the resource is marked as tainted it will be destroyed and re created on the next apply
 
-To taint a resource      --> terraform taint <resource_type>.<resource_name>
+To taint a resource                            --> terraform taint <resource_type>.<resource_name>
 
-To untaint a resource    --> terraform untaint <resource_type>.<resource_name>
+To untaint a resource                          --> terraform untaint <resource_type>.<resource_name>
 
-To list the resources managed by Terraform    --> terraform state list
+To list the resources managed by Terraform      --> terraform state list
 
-To get information about Particular resource  --> terraform state show <resorce-type>.<resource_name>
+To get information about Particular resource    --> terraform state show <resorce-type>.<resource_name>
 
 Resource Dependency:
 =============================
