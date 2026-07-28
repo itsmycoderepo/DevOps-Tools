@@ -15,3 +15,15 @@ Technical Debt      : 3h 20m
 Reliability         : A
 Security            : A
 Maintainability     : A
+
+
+6. How do we debug, if Jenkins is not accessible from the UI 
+   and how do we fix it and How do we ensure minimum downtime
+   for users(rescue instance)
+- First i will check sudo systemctl status jenkins
+- Check Jenkins logs --> sudo journalctl -u Jenkins -f
+- Verify java installation and compatible version --> java --version
+- Also check Disk Space
+- Verify port  using ss -tulnp | grep 8080
+- check system resources --> top and free
+- 
