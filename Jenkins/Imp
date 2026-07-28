@@ -1,0 +1,17 @@
+Example SonarQube Dashboard
+
+After scanning a project, you might see:
+
+Project: Banking Application
+
+Quality Gate        : Passed ✅
+Bugs                : 2
+Vulnerabilities     : 0
+Security Hotspots   : 3
+Code Smells         : 15
+Coverage            : 87%
+Duplications        : 1.2%
+Technical Debt      : 3h 20m
+Reliability         : A
+Security            : A
+Maintainability     : A
