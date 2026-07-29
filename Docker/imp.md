@@ -19,17 +19,18 @@ Types of namespaces
 5. IPC Namespace
 6. User Namespace
 
-Summary of namespaces
-----------------------
-| Namespace    | Isolates             | 
---------------------------------------
-| PID          | Processes            | 
-| NET          | Network              | 
-| MNT          | Filesystem mounts    | 
-| UTS          | Hostname/domain      | 
-| IPC          | Shared memory & IPC  | 
-| USER         | User and group IDs   | 
-=======================================
+# Linux Namespace Summary
+
+Linux namespaces provide isolation for different system resources, allowing processes to have their own independent view of the system.
+
+| **Namespace** | **Isolates** |
+|---------------|--------------|
+| **PID**       | Process IDs (process hierarchy) |
+| **NET**       | Network interfaces, routing tables, firewall rules, ports |
+| **MNT**       | Filesystem mount points |
+| **UTS**       | Hostname and domain name |
+| **IPC**       | System V IPC objects and POSIX message queues/shared memory |
+| **USER**      | User IDs (UIDs), Group IDs (GIDs), and privileges |
 
 ```bash```
 
